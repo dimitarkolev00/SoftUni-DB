@@ -1,0 +1,121 @@
+CREATE DATABASE TableRelations
+
+Use TableRelations
+--Problem1
+CREATE TABLE Passports
+(
+PassportID INT PRIMARY KEY IDENTITY(100,1),
+PassportNumber VARCHAR(30) NOT NULL
+)
+
+CREATE TABLE Persons
+(
+PersonID INT PRIMARY KEY IDENTITY,
+FirstName NVARCHAR(30) NOT NULL,
+Salary DECIMAL(8,2) NOT NULL,
+PassportID INT NOT NULL FOREIGN KEY REFERENCES Passports(PassportID) UNIQUE
+)
+--Problem2
+CREATE TABLE Manufacturers
+(
+ManufacturerID INT PRIMARY KEY IDENTITY,
+[Name] NVARCHAR(30) NOT NULL,
+EstablishedOn DATETIME2 NOT NULL
+)
+
+CREATE TABLE Models
+(
+ModelID INT PRIMARY KEY IDENTITY(100,1),
+[Name] NVARCHAR(30) NOT NULL,
+ManufacturerID INT FOREIGN KEY REFERENCES Manufacturers(ManufacturerID)
+)
+--Problem 3
+ CREATE TABLE Students(
+ StudentID INT PRIMARY KEY,
+ [Name] NVARCHAR(50) NOT NULL
+ )
+ CREATE TABLE Exams(
+ ExamID INT PRIMARY KEY,
+ [Name] NVARCHAR(50) NOT NULL
+ )
+ CREATE TABLE StudentsExams(
+ StudentID INT NOT NULL FOREIGN KEY REFERENCES Students(StudentID),
+ ExamID INT NOT NULL FOREIGN KEY REFERENCES Exams(ExamID),
+ PRIMARY KEY(StudentID, ExamID)
+ )
+ --Problem 4
+ CREATE TABLE Teachers(
+ TeacherID INT PRIMARY KEY IDENTITY,
+ [Name] NVARCHAR(50) NOT NULL,
+ ManagerID INT FOREIGN KEY REFERENCES Teachers(TeacherID)
+ )
+ --Problem 5
+ CREATE DATABASE OnlineStore
+ USE OnlineStore
+
+ CREATE TABLE Citites(
+ CityID INT PRIMARY KEY IDENTITY,
+ [Name] NVARCHAR(50) NOT NULL
+ )
+ CREATE TABLE Customers(
+ CustomerID INT PRIMARY KEY IDENTITY,
+ [Name] VARCHAR(50) NOT NULL,
+ Birthday DATE NOT NULL,
+ CityID INT FOREIGN KEY REFERENCES Citites(CityID)
+ )
+ CREATE TABLE Orders(
+ OrderID INT PRIMARY KEY IDENTITY,
+ CustomerID INT FOREIGN KEY REFERENCES Customers(CustomerID)
+ )
+ CREATE TABLE ItemTypes(
+ ItemTypeID INT PRIMARY KEY IDENTITY,
+ [Name] VARCHAR(50) NOT NULL
+ )
+ CREATE TABLE Items(
+ ItemID INT PRIMARY KEY IDENTITY,
+ [Name] VARCHAR(50)NOT NULL,
+ ItemTypeID INT FOREIGN KEY REFERENCES ItemTypes(ItemTypeID)
+ )
+ CREATE TABLE OrderItems(
+ OrderID INT FOREIGN KEY REFERENCES Orders(OrderID),
+ ItemID INT FOREIGN KEY REFERENCES Items(ItemID),
+ PRIMARY KEY(OrderID,ItemID)
+ )
+
+ --Problem 6
+ CREATE DATABASE University
+ USE University
+
+ CREATE TABLE Majors(
+ MajorID INT PRIMARY KEY ,
+ [Name] NVARCHAR(50) NOT NULL
+ )
+ CREATE TABLE Students(
+ StudentID INT PRIMARY KEY IDENTITY,
+ StudentNumber VARCHAR(10) NOT NULL,
+ StudentName NVARCHAR(50) NOT NULL,
+ MajorID INT NOT NULL FOREIGN KEY REFERENCES Majors(MajorID)
+ )
+ CREATE TABLE Payments(
+ PaymentID INT PRIMARY KEY IDENTITY,
+ PaymentDate DATE NOT NULL,
+ PaymentAmount DECIMAL(15,2) NOT NULL,
+ StudentID INT NOT NULL FOREIGN KEY REFERENCES Students(StudentID)
+ )
+ CREATE TABLE Subjects(
+ SubjectID INT PRIMARY KEY IDENTITY,
+ SubjectName NVARCHAR(80) NOT NULL
+ )
+ CREATE TABLE Agenda(
+ StudentID INT NOT NULL FOREIGN KEY REFERENCES Students(StudentID),
+ SubjectID INT NOT NULL FOREIGN KEY REFERENCES Subjects(SubjectID),
+ PRIMARY KEY (StudentID, SubjectID)
+ )
+ --Problem 9 
+ USE Geography
+ SELECT MountainRange,PeakName,Elevation FROM Peaks
+ JOIN Mountains ON Peaks.MountainId=Mountains.Id
+ WHERE MountainRange = 'Rila'
+ ORDER BY Elevation DESC
+ 
+
