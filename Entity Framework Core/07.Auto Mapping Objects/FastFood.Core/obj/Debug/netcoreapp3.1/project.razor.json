@@ -1,0 +1,110 @@
+{
+  "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\FastFood.Core.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 800
+  },
+  "RootNamespace": "FastFood.Core",
+  "Documents": [
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Orders\\All.cshtml",
+      "TargetPath": "Views\\Orders\\All.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Orders\\Create.cshtml",
+      "TargetPath": "Views\\Orders\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Positions\\Create.cshtml",
+      "TargetPath": "Views\\Positions\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Items\\Create.cshtml",
+      "TargetPath": "Views\\Items\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Categories\\Create.cshtml",
+      "TargetPath": "Views\\Categories\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Items\\All.cshtml",
+      "TargetPath": "Views\\Items\\All.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Positions\\All.cshtml",
+      "TargetPath": "Views\\Positions\\All.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Employees\\Register.cshtml",
+      "TargetPath": "Views\\Employees\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Employees\\All.cshtml",
+      "TargetPath": "Views\\Employees\\All.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\GitHub Repo\\SoftUni-DB\\Entity Framework Core\\07.Auto Mapping Objects\\FastFood.Core\\Views\\Categories\\All.cshtml",
+      "TargetPath": "Views\\Categories\\All.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
