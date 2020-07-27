@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>a2965966-f70d-4191-a8c2-cecee3d6ae92</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetStore.Models\PetStore.Models.csproj" />
+    <ProjectReference Include="..\PetStore.ServiceModels\PetStore.ServiceModels.csproj" />
+  </ItemGroup>
+
+</Project>
